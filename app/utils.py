@@ -21,28 +21,26 @@ ADMIN_USERS = {"Jesse": "admin123", "Chetan": "admin456"}
 
 # Projects & Assignments
 projects = [
-    "Anomaly Detection - Phase 1",
-    "Model Validation - Phase 1",
-    "Language Prioritization",
-    "Automated WP Notes - Phase 1",
-    "Data Extraction: MS Excel - Phase 1"
+    "Anomaly Detection", "Model Validation", "Language Prioritization",
+            "Automated WP Notes", "Data Extraction: MS Excel", "Data Extractor",
+            "Staffing Req Analsysis", "WhatIf Analysis", "Datamart Daywise"
 ]
 
 users_projects = {
-    "Adrian": [1, 1, 0, 1, 0],
-    "Chetan": [0, 0, 0, 0, 1],
-    "Claudio": [1, 1, 0, 1, 0],
-    "Danish": [0, 0, 0, 0, 1],
-    "Gabi": [1, 1, 0, 1, 0],
-    "Isaias": [1, 1, 0, 1, 0],
-    "Jesse": [1, 1, 1, 1, 0],
-    "Joel": [1, 1, 0, 1, 0],
-    "Lalit": [0, 0, 0, 0, 1],
-    "Laurie": [1, 1, 1, 1, 0],
-    "Maricela": [1, 1, 0, 1, 0],
-    "Mario": [1, 1, 0, 1, 0],
-    "Paul": [1, 1, 0, 1, 0],
-    "Vibhor": [1, 1, 0, 1, 0]
+    "Adrian": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Chetan": ["", "", "", "", 1, 1, 1, 1, 1],
+    "Claudio": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Danish": ["", "", "", "", 1, 1, 1, 1, 1],
+    "Gabi": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Isaias": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Jesse": [1, 1, 1, 1, "", 1, 1, 1, 1],
+    "Joel": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Lalit": ["", "", "", "", 1, 1, 1, 1, 1],
+    "Laurie": [1, 1, 1, 1, "", 1, 1, 1, 1],
+    "Maricela": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Mario": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Paul": [1, 1, "", 1, "", 1, 1, 1, 1],
+    "Vibhor": [1, 1, "", 1, "", 1, 1, 1, 1]
 }
 
 # -------------------------
@@ -98,16 +96,16 @@ elif option == "View Composite Scores":
             usage_score_map = {
                 "Not Used": 0,
                 "Started Exploring": 2,
-                "Started Utilizing": 5,
+                "Started Utilizing": 5, 
                 "Regularly Utilizing/Reaping Benefit": 10
             }
             feedback_score_map = {
-                "Not Used": 0,
-                "No Issue": 2,
+                "Not Used": 0, 
                 "Feature Request": 5,
-                "Design Issue": 8,
-                "Performance Issue": 8,
-                "Logical Issue": 10
+                "Design Issue": 5,
+                "Performance Issue": 8, 
+                "Logical Issue": 8,
+                "No Issue": 10
             }
             usefulness_score_map = {
                 "Not Used": 0,
